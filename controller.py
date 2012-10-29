@@ -64,7 +64,7 @@ class RGBController:
     def run(self):
         spidev = file(self.deviceName, "wb")
 
-    	print ("Start PixelInvaders listener " + self.UDP_IP + ":" + str(self.UDP_PORT))
+    	print ("Start Raw RGB listener " + self.UDP_IP + ":" + str(self.UDP_PORT))
     	sock = socket.socket( socket.AF_INET, # Internet
                           socket.SOCK_DGRAM ) # UDP
     	sock.bind( (self.UDP_IP,self.UDP_PORT) )
@@ -117,8 +117,7 @@ def defineCliArguments(controller):
     controller.chip_type = args.chip_type
 
 if __name__ == '__main__':
-    print "starting..."
-    
+
     controller = RGBController()
     defineCliArguments(controller)
     controller.run()

@@ -3,6 +3,7 @@ PixelPi
 RGB Pixel Array Driver for the Raspberry Pi; this provides a OLA output device which can display DMX data on LED pixels; or groups of pixels.  
 
 Project Page:
+http://thegreatgeekery.blogspot.ca/2012/10/pixelpi-update.html
 http://thegreatgeekery.blogspot.ca/2012/08/raspberry-pi-and-ws2801.html
 
 	usage: pixelpi.py [-h] [-v] [--verbose] [--udp-ip UDP_IP]
